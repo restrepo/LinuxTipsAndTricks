@@ -5,4 +5,7 @@
 mysqldump --default-character-set=latin1 --opt -u root -p ojs2 -r ojs2.sql
 sed -i -e ':a' -e 'N' -e  '$!ba' -e 's|\/\*!40101 SET NAMES latin1 \*\/;\n||' ojs2.sql
 ```
-*Recover dump
+* Recover dump
+```bash
+mysql -uroot -p --default-character-set=utf8 $DB < ojs2.sql
+```

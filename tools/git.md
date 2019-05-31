@@ -21,3 +21,10 @@ $ git checkout --track origin/newsletter
 Based on the remote branch `origin/newsletter`, we now have a new local branch named `newsletter`.
 
 From here on, you can make changes and commit them to your new local branch like you're used to.
+
+## Delete last commit and remove it from remote repository
+See https://stackoverflow.com/a/8225166/2268280
+```bash
+git reset HEAD^ # remove commit locally
+git push origin +HEAD # force-push the new HEAD commit
+```

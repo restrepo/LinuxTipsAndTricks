@@ -33,3 +33,9 @@ You can enforce a safe state with
 ```bash
 git reset --hard  COMMIT_HASH_FROM_GIT_LOG
 ```
+## Creates tag
+```bash
+git tag 'v0.1.4'
+git checkout -b tags/v0.1.4
+git push origin v0.1.4
+```

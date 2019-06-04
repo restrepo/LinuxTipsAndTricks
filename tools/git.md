@@ -28,3 +28,8 @@ See https://stackoverflow.com/a/8225166/2268280
 git reset HEAD^ # remove commit locally
 git push origin +HEAD # force-push the new HEAD commit
 ```
+## Return to a safe commmit
+You can enforce a safe state with
+```bash
+git reset --hard  COMMIT_HASH_FROM_GIT_LOG
+```

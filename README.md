@@ -4,3 +4,4 @@ Shell and console programs Tips and Tricks
 ## [MySQL](./tools/MySQL.md)
 ## [Linux shell commands](./tools/commands.md)
 ## [GIT](./tools/git.md)
+## [REGEX](https://github.com/restrepo/PythonTipsAndTricks/blob/master/python/REGEX.md)

@@ -1,4 +1,4 @@
-# MySQL and MariaDB tips and tricck
+# MySQL and MariaDB tips and tricks
 ## Creates a dump with proper utf8 encoding. See [here](https://makandracards.com/makandra/595-dumping-and-importing-from-to-mysql-in-an-utf-8-safe-way)
 * Created dump
 ```bash

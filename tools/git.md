@@ -16,7 +16,8 @@ From: https://www.git-tower.com/learn/git/faq/checkout-remote-branch
 
 The syntax for making git checkout "remote-ready" is rather easy: simply add the `--track` flag and the remote branch's ref like in the following example:
 ```bash
-$ git checkout --track origin/newsletter
+$ #git checkout --track origin/newsletter
+$ git checkout --track -b origin/newsletter
 ```
 Based on the remote branch `origin/newsletter`, we now have a new local branch named `newsletter`.
 

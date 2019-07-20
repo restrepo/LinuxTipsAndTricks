@@ -43,5 +43,10 @@ git push origin v0.1.4
 
 ## Rename branch local and remote
 ```bash
-git -m 
+git -m old_branck new_branck #without origin
 ```
+Delete branch thorugh GitHub tools in`NN branchs` menu
+```bash
+git push origin new_branch #without origin
+```
+

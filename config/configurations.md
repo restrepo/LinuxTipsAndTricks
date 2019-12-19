@@ -11,5 +11,5 @@ To configure for several flavors of Spanish and English use:
 ```bash
 # dpkg-reconfigure locales
 ```
-and choose `es_ES.utf8`, `es_ES.utf8`, and `us_US.utf8`
+and choose `es_ES.UTF-8`, `es_ES.UTF-8`, and `us_US.UTF-8`
 

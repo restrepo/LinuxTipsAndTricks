@@ -13,3 +13,5 @@ To configure for several flavors of Spanish and English use:
 ```
 and choose `es_ES.UTF-8`, `es_ES.UTF-8`, and `us_US.UTF-8`
 
+In Gnome go to `Settings → Region & Language`
+

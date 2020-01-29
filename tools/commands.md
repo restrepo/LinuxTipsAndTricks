@@ -12,3 +12,9 @@ ls |sort -R |tail -$N |while read file; do
     # off the while to just get the filenames
 done
 ```
+## Shell script to display output and store at same time
+See https://stackoverflow.com/a/8303599/2268280
+```bash
+./script.sh 2>&1 | tee -a out.txt
+done
+```

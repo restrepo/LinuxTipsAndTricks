@@ -22,3 +22,7 @@ For example the port 100
 ```bash
 telnet portquiz.net 100
 ```
+with timeout of 5s
+```bash
+echo quit | timeout --signal=9 5 telnet portquiz.net 100
+```

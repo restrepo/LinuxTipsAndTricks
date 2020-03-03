@@ -17,3 +17,8 @@ See https://stackoverflow.com/a/8303599/2268280
 ```bash
 ./script.sh 2>&1 | tee -a out.txt
 ```
+## Check if TCP port is open
+For exaple the port 100
+```bash
+telnet portquiz.net 100
+```

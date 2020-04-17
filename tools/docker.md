@@ -14,7 +14,7 @@ $ cd overleaf
 ```bash
 $ sudo docker-compose up
 ```
-If everything works out fine, you should be able to connect to your local sharelatex server at http://localhost:8080
+If everything works out fine, you should be able to connect to your local overleaf server at http://localhost:8080
 * Creating and Managing users:
 ```bash
 sudo docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email=joe@example.com"

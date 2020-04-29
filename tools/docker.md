@@ -20,7 +20,7 @@ or via web to http://localhost:6901/?password=vncpassword
 
 See [My Help] for the image/container management.
 
-### Custimized image
+### Customized image
 * Creates Dockerfile in `./Dockerfile`
 Use `exit 0` to allow the `RUN` of commands with errors (See https://stackoverflow.com/a/30717108)
 ```sh

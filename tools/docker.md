@@ -61,7 +61,9 @@ or via web to http://localhost:6901/?password=vncpassword
 See [My Help] for the image/container management.
 
 ### Forked image for ubuntu 18.04
-
+```sh
+docker run -d -p 5901:5901 --user 0 wittyfinch/ubuntu-vn
+```
 
 ## Example Overleaf:
 Tu run [Overleaf docker](https://github.com/overleaf/overleaf)

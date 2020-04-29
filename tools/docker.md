@@ -5,11 +5,13 @@ See installations instructions here: https://github.com/restrepo/docker-udea, in
 
 ## Example VNC:
 See: https://github.com/ConSol/docker-headless-vnc-container
-* CentOS
-To [install]() and run as root:
+* Ubuntu
+To install and run as root:
 ```sh
-$ sudo docker run -d -p 5901:5901 -p 6901:6901 --user 0 consol/centos-xfce-vnc
+$ sudo docker run -d -p 5901:5901 -p 6901:6901 --user 0 consol/ubuntu-xfce-vnc
 ```
+or change `ubuntu` by `centos`.
+
 Conect to 
 ```sh
 $ vncviewer localhost:5901  #default password: vncpassword

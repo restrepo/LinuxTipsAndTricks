@@ -61,6 +61,7 @@ or via web to http://localhost:6901/?password=vncpassword
 See [My Help] for the image/container management.
 
 ### Forked image for ubuntu 18.04
+To install and run as root: (See: https://hub.docker.com/r/wittyfinch/ubuntu-vnc)
 ```sh
 docker run -d -p 5901:5901 --user 0 wittyfinch/ubuntu-vn
 ```

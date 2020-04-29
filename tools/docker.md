@@ -3,6 +3,12 @@ See installations instructions here: https://github.com/restrepo/docker-udea, in
 
 [My Help](https://github.com/restrepo/docker-udea/blob/master/help.md)
 
+To clean all the containers:
+see https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+```sh
+$ docker system prune
+```
+
 ## Example VNC:
 See: https://github.com/ConSol/docker-headless-vnc-container
 ### Official image for ubuntu 16.04

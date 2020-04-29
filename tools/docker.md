@@ -5,7 +5,7 @@ See installations instructions here: https://github.com/restrepo/docker-udea, in
 
 ## Example VNC:
 See: https://github.com/ConSol/docker-headless-vnc-container
-* Ubuntu
+### Official image for ubuntu 16.04
 To install and run as root:
 ```sh
 $ sudo docker run -d -p 5901:5901 -p 6901:6901 --user 0 consol/ubuntu-xfce-vnc
@@ -17,6 +17,51 @@ Conect to
 $ vncviewer localhost:5901  #default password: vncpassword
 ```
 or via web to http://localhost:6901/?password=vncpassword
+
+See [My Help] for the image/container management.
+
+### Custimized image
+* Creates Dockerfile in `./Dockerfile`
+Use `exit 0` to allow the `RUN` of commands with errors (See https://stackoverflow.com/a/30717108)
+```sh
+## Custom Dockerfile
+FROM consol/ubuntu-xfce-vnc
+ENV REFRESHED_AT 2018-03-18
+
+# Switch to root user to install additional software
+USER 0
+
+RUN apt-get update
+RUN wget https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.5.4/openboard_ubuntu_16.04_1.5.4_amd64.deb 2> /dev/null
+RUN ls openboad_ubuntu_16.04_1.5.4_amd64.deb
+RUN dpkg -i openboard_ubuntu_16.04_1.5.4_amd64.deb; exit 0
+RUN apt-get -yf install 
+```
+
+* Build the image (see https://stackoverflow.com/a/36076856)
+```sh
+docker build -t openboard .
+```
+* Check the image
+```sh
+$ docker image ls
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+openboard                latest              54********        37 seconds ago      1.45GB
+```
+* run the image:
+```sh
+$ docker run -d -p 5901:5901 -p 6901:6901 --user 0 openboard
+```
+Conect to 
+```sh
+$ vncviewer localhost:5901  #default password: vncpassword
+```
+or via web to http://localhost:6901/?password=vncpassword
+
+See [My Help] for the image/container management.
+
+### Forked image for ubuntu 18.04
+
 
 ## Example Overleaf:
 Tu run [Overleaf docker](https://github.com/overleaf/overleaf)

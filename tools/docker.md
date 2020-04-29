@@ -3,7 +3,20 @@ See installations instructions here: https://github.com/restrepo/docker-udea, in
 
 [My Help](https://github.com/restrepo/docker-udea/blob/master/help.md)
 
-## Example:
+## Example VNC:
+See: https://github.com/ConSol/docker-headless-vnc-container
+* CentOS
+To [install]() and run as root:
+```sh
+$ sudo docker run -d -p 5901:5901 -p 6901:6901 --user 0 consol/centos-xfce-vnc
+```
+Conect to 
+```sh
+$ vncviewer localhost:5901  #default password: vncpassword
+```
+or via web to http://localhost:6901/?password=vncpassword
+
+## Example Overleaf:
 Tu run [Overleaf docker](https://github.com/overleaf/overleaf)
 * Install docker: `$ sudo docker pull sharelatex/sharelatex` 
 * Clone overleaf repo:

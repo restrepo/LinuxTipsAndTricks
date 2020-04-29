@@ -7,4 +7,5 @@ Shell and console programs Tips and Tricks
 ## [Configurations](./config/configurations.md)
 ## [REGEX](https://github.com/restrepo/PythonTipsAndTricks/blob/master/python/REGEX.md)
 ## [Docker](./tools/docker.md). 
+## [GUI apps](./gui/gui.md)
 See Overleaf docker example there

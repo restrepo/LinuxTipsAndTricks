@@ -1,6 +1,8 @@
 # Docker
 See installations instructions here: https://github.com/restrepo/docker-udea, including `docker-compose` install
 
+[My Help](https://github.com/restrepo/docker-udea/blob/master/help.md)
+
 ## Example:
 Tu run [Overleaf docker](https://github.com/overleaf/overleaf)
 * Install docker: `$ sudo docker pull sharelatex/sharelatex` 

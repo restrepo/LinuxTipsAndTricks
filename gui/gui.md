@@ -23,3 +23,10 @@ run with
 ```sh
 $ OpenBoard
 ```
+
+## Kazam
+While Kazam is running, you can use the following hotkeys:
+1. Super+Ctrl+R: __Start__ recording.
+1. Super+Ctrl+P: __Pause__ recording, press again for resuming the recording.
+1. Super+Ctrl+F: __Finish__ recording.
+1. Super+Ctrl+Q: __Quit__ recording.

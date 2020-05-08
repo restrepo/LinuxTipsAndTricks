@@ -30,3 +30,20 @@ While Kazam is running, you can use the following hotkeys:
 1. Super+Ctrl+p: __Pause__ recording, press again for resuming the recording.
 1. Super+Ctrl+f: __Finish__ recording.
 1. Super+Ctrl+q: __Quit__ recording.
+
+
+## Google Chrome
+
+### Choose a not Default profile
+```sh
+google-chrome-stable --profile-directory=NewProfile
+```
+### Connect trhough a socket
+Let say to activate socket through a  port 1080
+```sh
+ssh -C2qTnN -D 1081 -4 host
+```
+Then use:
+```
+https://aplicacionesbiblioteca.udea.edu.co:2381/app/answers/detail/a_id/11423/supporthub/scopus/
+```

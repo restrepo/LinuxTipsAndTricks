@@ -45,5 +45,5 @@ ssh -C2qTnN -D 1081 -4 host
 ```
 Then use:
 ```
-https://aplicacionesbiblioteca.udea.edu.co:2381/app/answers/detail/a_id/11423/supporthub/scopus/
-```
+ brave-browser  --proxy-server="socks5://localhost:1080"
+ ```

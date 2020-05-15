@@ -24,6 +24,21 @@ run with
 $ OpenBoard
 ```
 
+## OBS studio
+https://obsproject.com/: Free and open source software for video recording and live streaming. 
+The scenes can be designed. Good sound quality
+```bash
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+```
+
+## simplescreenrecorder
+```bash
+Good sound quality
+sudo apt install simplescreenrecorder
+```
+
 ## Kazam
 While Kazam is running, you can use the following hotkeys:
 1. Super+Ctrl+r: __Start__ recording.

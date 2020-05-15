@@ -34,8 +34,8 @@ sudo apt install obs-studio
 ```
 
 ## simplescreenrecorder
-```bash
 Good sound quality
+```bash
 sudo apt install simplescreenrecorder
 ```
 

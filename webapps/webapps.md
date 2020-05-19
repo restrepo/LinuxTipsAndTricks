@@ -21,3 +21,9 @@ https://spaces.fm/rainy-friday
 * https://webtorrent.io
 * Google Drive
 * https://onodo.org/
+## Jupyter notebook
+Real time collaboration
+* https://beta.deepnote.com/
+* http://cocalc.com/
+## Remote desktop
+* http://cocalc.com/

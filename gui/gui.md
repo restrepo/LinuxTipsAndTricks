@@ -62,3 +62,6 @@ Then use:
 ```
  brave-browser  --proxy-server="socks5://localhost:1080"
  ```
+ 
+ ## Inkscape
+ * [Feynman Rules](https://graphicdesign.stackexchange.com/q/107442/153312)

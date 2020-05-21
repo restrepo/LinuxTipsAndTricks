@@ -65,3 +65,5 @@ Then use:
  
  ## Inkscape
  * [Feynman Rules](https://graphicdesign.stackexchange.com/q/107442/153312)
+ * [Bend from clipboard](https://graphicdesign.stackexchange.com/a/103086/153312)
+ ![bend](https://i.stack.imgur.com/ZIt1D.gif)

@@ -13,3 +13,15 @@ password:
 guest@home~$ #home console
 ```
 See https://unix.stackexchange.com/a/101817/288558
+
+## Configure your browser to use an external socket
+Suppose that you want to connect to internet through the network of a remote server.com.
+Then you need to activate a socket through some port, like 1080, in your account in the remote computer
+```sh
+ssh -C2qTnN -D 1081 -4 user@server.com
+```
+Then you can configure your local browser to use the the network of the remote server.com. For example
+```
+ brave-browser  --proxy-server="socks5://localhost:1080"
+ ```
+ or by the proxy seeting of Firefox with the manual `socks5` option

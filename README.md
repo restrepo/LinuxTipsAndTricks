@@ -10,4 +10,5 @@ Shell and console programs Tips and Tricks
 ## [GUI apps](./gui/gui.md)
 ## [Web Apps](./webapps/webapps.md)
 ## [ssh](./tools/ssh.md)
+## [tor](./tools/tor.md)
 See Overleaf docker example there

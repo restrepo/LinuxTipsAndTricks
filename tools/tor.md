@@ -1,5 +1,5 @@
 # tor network
-## Joint to the tor network
+## Joint the tor network
 Creates onion addresses for a web server already running in port 80, and for a ssh server. The host computer can be well inside of an internal network!
 
 See [here]() and [hera]() for details

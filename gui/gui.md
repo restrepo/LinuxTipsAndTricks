@@ -75,3 +75,5 @@ Then you can configure your local browser to use the the network of the remote s
 
 Install: https://github.com/hanschen/ksuperkey
  
+## Fast remote desktop
+https://www.nomachine.com/download/download&id=2

@@ -25,9 +25,7 @@ HiddenServicePort 22 127.0.0.1:22
 4) Created the `hidden` directories with the proper permissions
 ```
 sudo mkdir -p /var/lib/tor/hidden_service/
-sudo mkdir -p /var/lib/tor/ssh_hidden_service/
 sudo chmod 0700 /var/lib/tor/hidden_service/
-sudo chmod 0700 /var/lib/tor/ssh_hidden_service/
 ```
 5) Restart the tor service
 ```
@@ -40,7 +38,7 @@ and check that step 1) is still workign and that files `hostname` and `private` 
 torify curl -v http://1abvdefghijklm3l.onion/
 ```
 or try to load it with the [`tor` browser](https://www.torproject.org/download/), provided the Tor network isn't overloaded. 
-7) Get check the onion hostname from `/var/lib/tor/ssh_hidden_service/hostname` and check from any other computer in the tor network (with tor installed as in step 1), with the proper onion url:
+7)  Check the ssh connection from any other computer in the tor network (with tor installed as in step 1), with the same onion hostname:
 ```bash
-torify ssh http://2abvdefghijklm32.onion/
+torify ssh http://1abvdefghijklm31.onion/
 ```

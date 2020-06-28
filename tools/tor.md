@@ -25,6 +25,7 @@ HiddenServicePort 22 127.0.0.1:22
 4) Created the `hidden` directories with the proper permissions
 ```
 sudo mkdir -p /var/lib/tor/hidden_service/
+chown debian-tor:debian-tor /var/lib/tor/hidden_service/ 
 sudo chmod 0700 /var/lib/tor/hidden_service/
 ```
 5) Restart the tor service

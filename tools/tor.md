@@ -18,8 +18,6 @@ and go to https://httpbin.org/ip to check that your connection is from some `tor
 ```
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
-
-HiddenServiceDir /var/lib/tor/ssh_hidden_service/
 HiddenServicePort 22 127.0.0.1:22
 ```
 4) Created the `hidden` directories with the proper permissions

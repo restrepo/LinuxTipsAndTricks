@@ -2,7 +2,7 @@
 ## Assign onion `tor` addresses to a computer in a hidden internal network
 Creates onion addresses for a web server already running in port 80, and for a ssh server in port 22. The host computer can be well inside of an internal network!
 
-See [here]() and [here]() for details
+See [here](https://medium.com/@ajphillips/how-to-create-your-own-tor-hidden-service-436bece8602f) and [here](https://medium.com/@tzhenghao/how-to-ssh-over-tor-onion-service-c6d06194147) for details
 
 1) Install tor to joint the tor network as a client (as the default behaviour)
 ```
@@ -35,10 +35,11 @@ sudo service tor restart
 ```
 and check that step 1) is still workign and that files `hostname` and `private` are generated in each hidden directory.
 
-6) Get check the onion hostname from `/var/lib/tor/hidden_service/hostname` and check from any other computer in the tor network (with tor installed as in step 1), with the proper onion url:
+6) Get the onion hostname from `/var/lib/tor/hidden_service/hostname` and check it from any other computer in the tor network (with tor installed as in step 2), with the obtained onion hostname:
 ```bash
 torify curl -v http://1abvdefghijklm3l.onion/
 ```
+or try to load it with the [`tor` browser](https://www.torproject.org/download/), provided the Tor network isn't overloaded. 
 7) Get check the onion hostname from `/var/lib/tor/ssh_hidden_service/hostname` and check from any other computer in the tor network (with tor installed as in step 1), with the proper onion url:
 ```bash
 torify ssh http://2abvdefghijklm32.onion/

@@ -1,5 +1,5 @@
 # `tor` network
-## Assign onion `tor` addresses to a computer in a hidden internal network
+## Assign an onion `tor` addresses to a computer in a hidden internal network
 Creates onion addresses for a web server already running in port 80, and for a ssh server in port 22. The host computer can be well inside of an internal network!
 
 See [here](https://medium.com/@ajphillips/how-to-create-your-own-tor-hidden-service-436bece8602f) and [here](https://medium.com/@tzhenghao/how-to-ssh-over-tor-onion-service-c6d06194147) for details

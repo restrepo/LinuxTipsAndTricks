@@ -30,7 +30,7 @@ sudo chmod 0700 /var/lib/tor/hidden_service/
 ```
 sudo service tor restart
 ```
-and check that step 1) is still workign and that files `hostname` and `private` are generated in each hidden directory.
+and check that step 1) is still workign and that files `hostname` and `private` are generated in the hidden directory.
 
 6) Get the onion hostname from `/var/lib/tor/hidden_service/hostname` and check it from any other computer in the tor network (with tor installed as in step 2), with the obtained onion hostname:
 ```bash

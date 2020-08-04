@@ -26,3 +26,21 @@ with timeout of 5s
 ```bash
 echo quit | timeout --signal=9 5 telnet portquiz.net 100
 ```
+## List partitions of all devices
+```bash
+lsblk
+```
+## Change root
+1. Mount a linux partition to use `chroot`, e.g `/dev/sda5`
+```bash
+sudo mount /dev/sda5 /mnt
+```
+2. Mount critical virtual filesystems:
+```bash
+ for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
+```
+3. `chroot` into the Linux partition you mounted:
+```bash
+sudo chroot /mnt
+```
+See https://askubuntu.com/a/946155 which includes one explanation to use this method to install grud in an external hard disk

@@ -77,3 +77,8 @@ Install: https://github.com/hanschen/ksuperkey
  
 ## Fast remote desktop
 https://www.nomachine.com/download/download&id=2
+
+## Creates bootable USB drive
+Use [Etcher](https://www.balena.io/etcher/):
+> Flash OS images to SD cards & USB drives, safely and easily.
+Debian [install](https://github.com/balena-io/etcher#debian-and-ubuntu-based-package-repository-gnulinux-x86x64)

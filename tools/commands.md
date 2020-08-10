@@ -44,3 +44,34 @@ sudo mount /dev/sda5 /mnt
 sudo chroot /mnt
 ```
 See https://askubuntu.com/a/946155 which includes one explanation to use this method to install grud in an external hard disk
+
+## Add swap file
+From https://askubuntu.com/a/178726
+1. Create empty file:
+This file will contain virtual memory contents so make file big enough for your needs. This one will create 1Gb file which means +1Gb swap space for your system:
+```bash
+dd if=/dev/zero of=/media/fasthdd/swapfile.img bs=1024 count=1M
+```
+If you want to make 3Gb file then change count value to count=3M. See man dd for more information.
+
+2. Bake swap file:
+Following command is going to make "swap filesystem" inside your fresh swap file.
+```bash
+mkswap /media/fasthdd/swapfile.img
+```
+
+3. Activate:
+You can either reboot your computer or activate new swap file by hand with following command:
+```bash
+swapon /media/fasthdd/swapfile.img
+```
+
+4. Bring up on boot:
+To make sure that your new swap space is activated while booting up computer you should add it to filesystem configuration file /etc/fstab. Add it to end of file, this is recommended because other filesystems (at least one that contains swap file) must be mounted in read-write mode before we can access any files.
+
+```bash
+# Add this line to /etc/fstab
+/media/fasthdd/swapfile.img swap swap sw 0 0
+```
+
+

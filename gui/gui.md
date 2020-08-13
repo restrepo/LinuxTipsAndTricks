@@ -83,3 +83,6 @@ Use [Etcher](https://www.balena.io/etcher/):
 > Flash OS images to SD cards & USB drives, safely and easily.
 
 Debian [install](https://github.com/balena-io/etcher#debian-and-ubuntu-based-package-repository-gnulinux-x86x64)
+
+## Mathematica
+See [here](https://drive.google.com/file/d/1AeUurFTrmGfvMMOlWKFJeKCChLMa-mW8/view?usp=sharing) 

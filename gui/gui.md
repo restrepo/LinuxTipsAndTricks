@@ -85,4 +85,11 @@ Use [Etcher](https://www.balena.io/etcher/):
 Debian [install](https://github.com/balena-io/etcher#debian-and-ubuntu-based-package-repository-gnulinux-x86x64)
 
 ## Mathematica
-See [here](https://drive.google.com/file/d/1AeUurFTrmGfvMMOlWKFJeKCChLMa-mW8/view?usp=sharing) 
+See [here](https://drive.google.com/file/d/1AeUurFTrmGfvMMOlWKFJeKCChLMa-mW8/view?usp=sharing)
+
+## Emacs
+Install https://github.com/epa095/latex-pretty-symbols.el
+
+To reactivate after load CDLaTeX mode, use `M-x prettify-symbols-mode`
+
+

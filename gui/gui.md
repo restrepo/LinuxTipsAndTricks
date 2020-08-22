@@ -90,6 +90,15 @@ See [here](https://drive.google.com/file/d/1AeUurFTrmGfvMMOlWKFJeKCChLMa-mW8/vie
 ## Emacs
 Install https://github.com/epa095/latex-pretty-symbols.el
 
-To reactivate after load CDLaTeX mode, use `M-x prettify-symbols-mode`
+To reactivate after load CDLaTeX mode, use `M-x prettify-symbols-mode` 
 
+In addittion to [`company`](http://company-mode.github.io/) with `~/.emacs` configuration
+```lisp
+;; company
+(global-company-mode t)
+(add-hook 'after-init-hook 'global-company-mode)
+```
+we have
+
+![emacs](./cut.gif)
 

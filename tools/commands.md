@@ -74,4 +74,10 @@ To make sure that your new swap space is activated while booting up computer you
 /media/fasthdd/swapfile.img swap swap sw 0 0
 ```
 
+## How to kill a process running on particular port in Linux?
+See: https://stackoverflow.com/a/32592965/2268280
+```bash
+kill $(lsof -t -i:8080)
+```
+
 

@@ -79,5 +79,11 @@ See: https://stackoverflow.com/a/32592965/2268280
 ```bash
 kill $(lsof -t -i:8080)
 ```
+##  How to know whether Wayland or X11 is being used
+https://unix.stackexchange.com/a/325972/288558
+```bash
+loginctl show-session <SESSION_ID> -p Type
+```
+
 
 

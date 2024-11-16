@@ -23,7 +23,7 @@ sudo echo 0 | sudo tee /sys/class/leds/asus::kbd_backlight_1/brightness
 ```
 or try https://askubuntu.com/a/810715/678974
 
-# Nvidia: Unable to open X config file '/etc/X11/xorg.conf' for writing
+## Nvidia: Unable to open X config file '/etc/X11/xorg.conf' for writing
 [https://www.reddit.com/r/Ubuntu/comments/csglyi/comment/hn3bv8b/
 ](https://www.reddit.com/r/Ubuntu/comments/csglyi/comment/hn3bv8b/
 )
